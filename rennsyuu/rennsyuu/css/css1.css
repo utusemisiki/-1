@@ -1,0 +1,24 @@
+
+#intro {
+    display: flex; /* 横並びにする */
+   
+}
+
+.profile-image {
+    width: 150px; /* 画像のサイズ調整 */
+    height: 150px; /* 画像の高さを設定 */
+    border-radius: 50%; /* 画像を丸くする */
+    margin-right: 20px; /* 画像とテキストの間にスペースを作る */
+}
+
+.text-content {
+    max-width: 600px; /* テキストの最大幅（必要に応じて調整） */
+    
+    align-items: center; /* 画像と文章を縦方向で中央揃え */
+}
+
+#intro h1, #intro p {
+    margin: 10px 0; /* テキストの間にスペースを追加 */
+}
+
+
