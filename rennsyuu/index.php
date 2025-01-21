@@ -62,7 +62,7 @@ $github = "https://github.com/johndoe";
         </ul>
     </section>
     <section id="hobbys">
-        <h2>趣味、好きなこと</h2>
+        
         <?php
      include "include.php";
     
@@ -85,5 +85,44 @@ $github = "https://github.com/johndoe";
         <p>&copy; 2024 <?php echo $name; ?>. All Rights Reserved.</p>
     </footer>
 
+    <html>
+ <?php
+if(isset($_POST["send_message"])){
+        //送信されたname="message"とname="user_name"の値を取得する
+        $message = trim($_POST['message']);
+        $user = trim($_POST['user_name']);
+    
+
+    if(empty($message)){
+        if(empty($user)){
+            $user = "名無し";
+        }
+
+    }
+}
+ ?>
+
+<head lang="ja">
+<meta charset="utf-8">
+</head>
+<body>
+<h1>コメント</h1>
+
+<!--ここで投稿内容を送信する-->
+<form action="" method="post">
+    メッセージ:<input type="text" name="message">
+    ユーザー名:<input type="text" name="user_name">
+    <input type="submit" name="send_message" value="投稿">
+</form>
+
+<h2>投稿一覧</h2>
+<ul>
+    <?php
+    echo "<p><strong>ユーザー名:</strong> " . htmlspecialchars($user) . "</p>";
+    echo "<p><strong>メッセージ:</strong> " . nl2br(htmlspecialchars($message)) . "</p>";
+?>
+</ul>
+</body>
+</html>
 </body>
 </html>

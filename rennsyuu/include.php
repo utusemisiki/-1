@@ -12,7 +12,7 @@ $hobby2 = ["大乱闘スマッシュブラザーズ","eFootball","ヘブンズ�
 </head>
 <body>
 <section  >
-<div class="container">
+<div class="#intro">
         <h2>趣味、好きなこと</h2>
         
    

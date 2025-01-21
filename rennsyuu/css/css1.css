@@ -21,18 +21,4 @@
     margin: 10px 0; /* テキストの間にスペースを追加 */
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 100%;          /* 最大幅を100%に設定 */
-    flex-wrap: wrap;          /* 画像が横に並びきれない場合、次の行に折り返す */
-    box-sizing: border-box;   /* パディングを含めたサイズ計算 */
-}
-.imagesize {
-    width: 100%;            /* 画像の幅を親要素に合わせる */
-    max-width: 200px;       /* 最大幅を200pxに制限 */
-    height: auto;           /* 高さは自動調整 */
-    border-radius: 10px;    /* 画像を丸角にする */
-}
+
